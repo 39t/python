@@ -1,0 +1,18 @@
+import random
+
+x = random.randint(0, 100)
+y=5
+print(" please guess the numer you would get ",y," chances")
+for i in range(1,y):
+        num = int(input())
+            
+        if num == x:
+            print("congratullations u guess it correctlly")
+            break
+        elif num < x:
+            print("the number is bigger and the guesses left: ", y-i)
+        elif num > x:
+            print("the number is smaller and the guesses left: ", y-i)
+print("Game Over")   
+print("the number is",x)
+print(" number of guesses you took is",i)
